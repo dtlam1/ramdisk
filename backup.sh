@@ -1,0 +1,1 @@
+sudo /usr/bin/rsync -av --progress /ramdisk-tmp /ramdisk-backup --exclude node_modules
