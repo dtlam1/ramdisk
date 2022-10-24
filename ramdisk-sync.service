@@ -1,0 +1,11 @@
+[Unit]
+Description=Ramdisk backup
+
+[Service]
+Type=oneshot
+#ExecStart=/usr/bin/cp -R /ramdisk-tmp/ /ramdisk-backup
+ExecStart=/usr/bin/rsync -av --progress /ramdisk-tmp /ramdisk-backup --exclude node_modules
+#RemainAfterExit=yes
+
+[Install]
+WantedBy=muti-user.target

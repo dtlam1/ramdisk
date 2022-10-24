@@ -1,0 +1,9 @@
+[Unit]
+Description=Ramdisk start on boot
+
+[Service]
+OnBootSec=5s
+Unit=ramdisk-starup.service
+
+[Install]
+WantedBy=multi-user.target

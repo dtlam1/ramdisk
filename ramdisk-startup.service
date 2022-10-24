@@ -1,0 +1,8 @@
+[Unit]
+Desctiption=Create Ramdisk
+
+[Service]
+ExecStart=/usr/bin/sh /srv/createRamdisk.sh
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,12 @@
+[Unit]
+Description=Ramdisk Backup Timer
+
+[Timer]
+OnUnitActiveSec=5min
+OnActiveSec=5min
+OnBootSec=5min
+OnUnitInactiveSec=5min
+Unit=ramdisk-sync.service
+
+[Install]
+WantedBy=timers.target
